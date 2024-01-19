@@ -37,7 +37,7 @@ jobs:
       - name: commit
         run: |
             git add ./normal.json
-            git add ./lottie.json
+            git add ./lottieAssets
             git commit -am "✅ assets updated!" 
             git push
       
