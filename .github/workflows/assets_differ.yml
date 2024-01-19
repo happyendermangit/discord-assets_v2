@@ -1,4 +1,4 @@
-name: Classes differ
+name: Assets differ
 on:
   push:
     branches:
@@ -26,6 +26,6 @@ jobs:
           pip install requests PyGithub
       - name: Run script
         run: |
-          python ./src/Assetsdiffer.py
+          python ./differ.py
         env:
             ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
