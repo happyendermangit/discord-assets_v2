@@ -24,20 +24,23 @@ const { assert } = require('console');
             console.log('FOUND CHUNK LOADER!!!!')
             console.log('FOUND CHUNK LOADER!!!!')
             let scripts_ = await findScripts(content)
-            for (script of scripts_){
-                let content_ = await fetch(`https://canary.discord.com/assets/${script}`)
+            for (script_ of scripts_){
+                let content_ = await fetch(`https://canary.discord.com/assets/${script_}`)
                 content_ = await content_.text()
                 let tempAssets = await findAssets(content_)
 
                 for (asset of Object.keys(tempAssets)){
                     if (typeof tempAssets[asset] === "object"){
                         lottieAssets[asset] = tempAssets[asset]
+                        await fs.writeFile(`./lottieAssets/${asset}.json`,JSON.stringify(tempAssets[asset],null,4))
                     }
                     if (typeof tempAssets[asset] === "string"){
                         result[asset] = tempAssets[asset]
                     }
                 }
-                console.log(`${script} ${Object.keys(tempAssets).length}`)
+                if (Object.keys(tempAssets).length > 0){
+                    console.log(`${script_} ${Object.keys(tempAssets).length}`)
+                }            
             }
         }
         let tempAssets = await findAssets(content)
@@ -45,18 +48,20 @@ const { assert } = require('console');
         for (asset of Object.keys(tempAssets)){
             if (typeof tempAssets[asset] === "object"){
                 lottieAssets[asset] = tempAssets[asset]
+                await fs.writeFile(`./lottieAssets/${asset}.json`,JSON.stringify(tempAssets[asset],null,4))
             }
             if (typeof tempAssets[asset] === "string"){
                 result[asset] = tempAssets[asset]
             }
         }
-        console.log(`${script} ${Object.keys(tempAssets).length}`)
+        if (Object.keys(tempAssets).length > 0){
+            console.log(`${script} ${Object.keys(tempAssets).length}`)
+        }
 
     }
     console.log(`found normal: ${Object.keys(result).length}`)
     console.log(`found lottie: ${Object.keys(lottieAssets).length}`)
-    
-    await fs.writeFile('lottie.json',JSON.stringify(lottieAssets,null,4))
+
     await fs.writeFile('normal.json',JSON.stringify(result,null,4))
 
 
