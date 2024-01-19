@@ -27,26 +27,7 @@ async function findAssets(code) {
                 node?.value?.body?.body?.length === 2
             ){
                 let body1 = node?.value?.body?.body[1]
-
-                try{
-                    let splits = escodegen.generate(body1).split('=')
-                    if (
-                        splits.length === 2 && 
-                        splits[1].split('+').length == 2 
-                    ){
-                        if (
-                            splits[1].split('+')[1].replaceAll(' ','').startsWith(`'`) ||
-                            splits[1].split('+')[1].replaceAll(' ','').startsWith(`"`) 
-                        ){
-                            assets[node?.key?.name ?? node?.key?.value] = splits[1].split('+')[1].replaceAll(' ','').replaceAll(`'`,'').replaceAll(`"`,'').replaceAll(`;`,'')
-                        }
-                    }
-                    //assets[node?.key?.value ?? node?.key?.name] = eval(`let b={};!${escodegen.generate(node?.value)}(b,null,{}),b.exports.replaceAll('undefined','')`)
-                }
-                catch{
-                }
                 
-
                 
                 try{
                     if (body1?.expression?.right?.value?.startsWith('data:image/')){
@@ -71,7 +52,19 @@ async function findAssets(code) {
                 catch{
                 }
                
-                
+                if (
+                    body1.type === "ExpressionStatement" &&
+                    body1?.expression?.type === "AssignmentExpression" && 
+                    body1?.expression?.right?.type === "BinaryExpression" &&
+                    body1?.expression?.right?.operator === "+"
+                ){
+                    let asset = body1?.expression?.right?.right?.value
+                    if (
+                        asset?.split(".")?.length === 2
+                    ){
+                        assets[node?.key?.value ?? node?.key?.name] = asset 
+                    }
+                }
                 
             }
             
