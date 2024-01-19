@@ -1,2 +1,1 @@
-# those are unreadable lottie files
-## idk if it's even possible to decode them 
+# use https://app.lottiefiles.com/preview to view these files
