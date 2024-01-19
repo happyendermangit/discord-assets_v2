@@ -38,6 +38,6 @@ jobs:
         run: |
             git add ./normal.json
             git add ./lottie.json
-            git commit -am "✅ classes updated!" 
+            git commit -am "✅ assets updated!" 
             git push
       
