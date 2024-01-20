@@ -15,7 +15,7 @@ jobs:
       issues: write
       statuses: write
       deployments: write
-    name: Classes differ
+    name: Assets differ
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
