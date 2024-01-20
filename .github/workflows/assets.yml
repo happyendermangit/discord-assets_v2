@@ -38,6 +38,7 @@ jobs:
         run: |
             git add ./normal.json
             git add ./lottieAssets
+            git add ./buildInfo.json
             git commit -am "✅ assets updated!" 
             git push
       

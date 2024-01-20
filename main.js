@@ -3,6 +3,7 @@
     
     const { findAssets } = require('./scraper/scrapeAssets.js')
     const { findScripts } = require('./scraper/scrapeScripts.js')
+    const { getBuildInfo } = require('./scraper/scrapeBuildInfo.js')
     const fs = require("fs").promises;
 
     var result = {}
@@ -41,6 +42,12 @@
                     console.log(`${script_} ${Object.keys(tempAssets).length}`)
                 }            
             }
+        }
+
+        let BuildInfo = await getBuildInfo(content)
+        console.log(BuildInfo)
+        if (Object.keys(BuildInfo).length > 0){
+            await fs.writeFile(`./buildInfo.json`,JSON.stringify(BuildInfo,null,4))
         }
         let tempAssets = await findAssets(content)
         

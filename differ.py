@@ -3,7 +3,7 @@ import requests
 from github import Github
 
 
-def compareClasses(before,after):
+def compareAssets(buildInfo,before,after):
     after_ = {}
     for k,v in after.items():
         after_[v] = k 
@@ -11,7 +11,7 @@ def compareClasses(before,after):
     for k,v in before.items():
         before_[v] = k 
         
-    diff = "## Assets:\n```diff\n"
+    diff = f"## Assets (**`Build number: {buildInfo['buildNumber']} / Version hash: {buildInfo['versionHash']}`**):\n```diff\n"
     stuff = {
         "ADDED":"",
         "REMOVED":"",
@@ -48,8 +48,9 @@ def compare(username, repository, token):
         if commits[0]['commit']['message']:
             parent = requests.get("https://raw.githubusercontent.com/happyendermangit/discord-assets_v2/"+commits[0]['parents'][0]['sha']+"/normal.json").json()
             commit = requests.get("https://raw.githubusercontent.com/happyendermangit/discord-assets_v2/"+commits[0]['sha']+"/normal.json").json()
+            buildInfo = requests.get("https://raw.githubusercontent.com/happyendermangit/discord-assets_v2/"+commits[0]['sha']+"/buildInfo.json").json()
             if parent != commit:
-                diff = compareClasses(parent,commit)
+                diff = compareAssets(buildInfo,parent,commit)
                 g = Github(token)
                 repo = g.get_repo("happyendermangit/discord-assets_v2")
                 commit = repo.get_commit(commits[0]['sha'])
