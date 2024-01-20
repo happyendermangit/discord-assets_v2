@@ -4,20 +4,27 @@ from github import Github
 
 
 def compareClasses(before,after):
-    diff = "# Classes:\n```diff\n"
+    after_ = {}
+    for k,v in after.items():
+        after_[v] = k 
+    before_ = {}
+    for k,v in before.items():
+        before_[v] = k 
+        
+    diff = "# Assets:\n```diff\n"
     stuff = {
         "ADDED":"",
         "REMOVED":"",
         "UPDATED":""
     }
-    for key,value in after.items():
-        if key not in before.keys():
+    for key,value in after_.items():
+        if key not in before_.keys():
             stuff['ADDED'] += f'+ {key}: "{value}"\n'
         else:
-            if value != before[key]:
+            if value != before_[key]:
                 stuff['UPDATED'] += f'- {key}:"{before[key]}"\n+ {key}: "{value}"\n'
-    for key,value in before.items():
-        if key not in after.keys():
+    for key,value in before_.items():
+        if key not in after_.keys():
             stuff['REMOVED'] += f'- {key}: "{value}"\n'
     
     for k,v in stuff.items():
