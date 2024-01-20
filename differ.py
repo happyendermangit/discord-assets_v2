@@ -11,7 +11,7 @@ def compareClasses(before,after):
     for k,v in before.items():
         before_[v] = k 
         
-    diff = "# Assets:\n```diff\n"
+    diff = "## Assets:\n```diff\n"
     stuff = {
         "ADDED":"",
         "REMOVED":"",
