@@ -38,7 +38,7 @@ def compare(username, repository, token):
 
     if response.status_code == 200:
         commits = response.json()
-        if commits[0]['commit']['message'] == "✅ assets updated!":
+        if commits[0]['commit']['message']:
             parent = requests.get("https://raw.githubusercontent.com/happyendermangit/discord-assets_v2/"+commits[0]['parents'][0]['sha']+"/normal.json").json()
             commit = requests.get("https://raw.githubusercontent.com/happyendermangit/discord-assets_v2/"+commits[0]['sha']+"/normal.json").json()
             if parent != commit:
