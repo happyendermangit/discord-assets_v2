@@ -107,14 +107,14 @@
         let BuildInfo = await getBuildInfo(content)
         console.log(BuildInfo)
         if (Object.keys(BuildInfo).length > 0){
-            await fs.writeFile(`../buildInfo.json`,JSON.stringify(BuildInfo,null,4),function(err){})
+            await fs.writeFile(`../buildInfo.json`,JSON.stringify(BuildInfo,null,4))
         }
         let tempAssets = await findAssets(content)
         
         for (asset of Object.keys(tempAssets)){
             if (typeof tempAssets[asset] === "object"){
                 lottieAssets[asset] = tempAssets[asset]
-                await fs.writeFile(`../lottieAssets/${tempAssets[asset].nm}.json`,JSON.stringify(tempAssets[asset],null,4))
+                await fs.writeFile(`./lottieAssets/${tempAssets[asset].nm}.json`,JSON.stringify(tempAssets[asset],null,4))
             }
             if (typeof tempAssets[asset] === "string"){
                 if (!tempAssets[asset].startsWith('data:image/')){
