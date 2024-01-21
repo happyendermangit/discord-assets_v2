@@ -21,9 +21,9 @@
     config.appEndpoint = "".concat(config.discordUrl,"/app")
 
     
-    async function downloadAsset(asset) {
+    async function downloadAsset(asset,addAssetEndpoint) {
         try {
-            const response = await fetch(`${config.discordUrl}${asset}`);
+            const response = await fetch(addAssetEndpoint === false ? `${config.discordUrl}${asset}`: `${config.discordUrl}${config.assetEndpoint}${asset}`);
 
             if (!response.ok) {
                 throw new Error(`Failed to download ${asset}. Status: ${response.status} ${response.statusText}`);
