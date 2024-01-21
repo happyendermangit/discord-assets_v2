@@ -32,7 +32,7 @@
             const buffer = await response.arrayBuffer();
             const fileContent = Buffer.from(buffer);
 
-            fs.writeFileSync('..' + asset, fileContent);
+            fs.writeFileSync('..' + addAssetEndpoint === false ? `${asset}`: `/assets/${asset}`, fileContent);
 
             console.log(`[DOWNLOADER] Downloaded ${asset}`);
         } catch (error) {
