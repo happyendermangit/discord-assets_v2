@@ -64,7 +64,7 @@
         console.log(`[INFO] Found ${assetLinks.length} on ${style}`)
         for (asset of assetLinks){
             await downloadAsset(asset,false)
-            await wait(1)
+            await wait(3)
         }
 
     }
@@ -88,12 +88,12 @@
                 for (asset of Object.keys(tempAssets)){
                     if (typeof tempAssets[asset] === "object"){
                         lottieAssets[asset] = tempAssets[asset]
-                        await fs.writeFile(`../lottieAssets/${tempAssets[asset].nm}.json`,JSON.stringify(tempAssets[asset],null,4))
+                        await fs.writeFile(`../lottieAssets/${tempAssets[asset].nm}.json`,JSON.stringify(tempAssets[asset],null,4),function(err){})
                     }
                     if (typeof tempAssets[asset] === "string"){
                         if (!tempAssets[asset].startsWith('data:image/')){
                             await downloadAsset(tempAssets[asset],true)
-                            await wait(1) 
+                            await wait(3) 
                         }
                         result.push(tempAssets[asset])
                     }
@@ -107,7 +107,7 @@
         let BuildInfo = await getBuildInfo(content)
         console.log(BuildInfo)
         if (Object.keys(BuildInfo).length > 0){
-            await fs.writeFile(`../buildInfo.json`,JSON.stringify(BuildInfo,null,4))
+            await fs.writeFile(`../buildInfo.json`,JSON.stringify(BuildInfo,null,4),function(err){})
         }
         let tempAssets = await findAssets(content)
         
@@ -119,7 +119,7 @@
             if (typeof tempAssets[asset] === "string"){
                 if (!tempAssets[asset].startsWith('data:image/')){
                     await downloadAsset(tempAssets[asset],true)
-                    await wait(1) 
+                    await wait(3) 
                 }
                 result.push(tempAssets[asset])
             }
@@ -132,7 +132,7 @@
     console.log(`found normal: ${Object.keys(result).length}`)
     console.log(`found lottie: ${Object.keys(lottieAssets).length}`)
 
-    await fs.writeFile('../assets.json',JSON.stringify(result,null,4))
+    await fs.writeFile('../assets.json',JSON.stringify(result,null,4),function(err){})
 
 
 })();
