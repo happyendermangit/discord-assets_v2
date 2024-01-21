@@ -2,7 +2,7 @@ name: assets miner
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/30 * * * *"
   workflow_dispatch:
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
       - name: Run script
         run: |
           npm install escodegen acorn acorn-walk
-          node ./main.js
+          node ./src/main.js
   
       - name: set email
         run: |
@@ -36,9 +36,11 @@ jobs:
 
       - name: commit
         run: |
-            git add ./normal.json
             git add ./lottieAssets
+            git add ./assets
             git add ./buildInfo.json
+            git add ./assets.json
+
             git commit -am "✅ assets updated!" 
             git push
       

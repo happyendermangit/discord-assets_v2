@@ -18,16 +18,13 @@ jobs:
     name: Assets differ
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v3
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v3
         with:
-          python-version: "3.10"
-      - name: Install dependencies
-        run: |
-          pip install requests PyGithub
-      - name: Run script
-        run: |
-          python ./differ.py
+          node-version: '20.x'
+      - run: npm init -y
+      - name: Install modules
+        run: node ./src/differ.js
         env:
-            ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
