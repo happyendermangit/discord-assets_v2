@@ -63,7 +63,7 @@
         var assetLinks = content.match(/\/assets\/[^)\s]+\.[^)\s^"^']+/g)
         console.log(`[INFO] Found ${assetLinks.length} on ${style}`)
         for (asset of assetLinks){
-            await downloadAsset(asset)
+            await downloadAsset(asset,false)
             await wait(1)
         }
 
@@ -92,7 +92,7 @@
                     }
                     if (typeof tempAssets[asset] === "string"){
                         if (!tempAssets[asset].startsWith('data:image/')){
-                            await downloadAsset(tempAssets[asset])
+                            await downloadAsset(tempAssets[asset],true)
                             await wait(1) 
                         }
                         result.push(tempAssets[asset])
@@ -118,7 +118,7 @@
             }
             if (typeof tempAssets[asset] === "string"){
                 if (!tempAssets[asset].startsWith('data:image/')){
-                    await downloadAsset(tempAssets[asset])
+                    await downloadAsset(tempAssets[asset],true)
                     await wait(1) 
                 }
                 result.push(tempAssets[asset])
