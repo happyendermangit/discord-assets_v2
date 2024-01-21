@@ -27,7 +27,7 @@ jobs:
       - name: Run script
         run: |
           npm install escodegen acorn acorn-walk
-          node ./src/main.js
+          node ./scraper/main.js
   
       - name: set email
         run: |
