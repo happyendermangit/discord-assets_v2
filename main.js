@@ -35,7 +35,7 @@
                         await fs.writeFile(`./lottieAssets/${asset}.json`,JSON.stringify(tempAssets[asset],null,4))
                     }
                     if (typeof tempAssets[asset] === "string"){
-                        result[asset] = tempAssets[asset]
+                        result[tempAssets[asset]] = asset
                     }
                 }
                 if (Object.keys(tempAssets).length > 0){
