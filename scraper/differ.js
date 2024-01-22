@@ -45,7 +45,7 @@
 
     for (file of files){
     
-        if (file.status != "renamed"){
+        if (file.status != "renamed" && file.filename.startsWith('./assets') || file.filename.startsWith('./res')){
             var category = file.status === "modified" ? "updated" : file.status 
             diff[category] += `${file.status === "removed" ? "-" : "+"} ${file.filename}\n`    
         }
