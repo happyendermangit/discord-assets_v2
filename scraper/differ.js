@@ -52,7 +52,10 @@
     
     }
 
-    let result = "## Assets:\n```diff\n"
+    let metadata = await fetch('https://raw.githubusercontent.com/happyendermangit/discord-assets_v2/main/assets/manifest.json')
+    metadata = await metadata.json()
+    metadata = metadata.metadata
+    let result = "## Assets (buildNumber):\n```diff\n".replace('buildNumber',metadata.build)
 
     for (type in diff){
        
