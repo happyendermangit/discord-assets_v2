@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: "3.11.3"
       - name: Install dependencies
-        run: pip install requests zipfile
+        run: pip install requests
       - name: Install modules
         run: python ./scraper/getApk.py
         env:
