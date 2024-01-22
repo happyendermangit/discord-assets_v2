@@ -1,0 +1,35 @@
+name: apk scraper
+on:
+  workflow_dispatch:
+
+
+jobs:
+  comments:
+    permissions:
+      contents: write
+      packages: write
+      pull-requests: write
+      issues: write
+      statuses: write
+      deployments: write
+    name: apk scraper
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install requests zipfile
+      - name: Install modules
+        run: python ./scraper/getApk.py
+        env:
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+      - name: Configure email
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+      - name: Push to git
+        run: |
+          git add ./assets
+          git add ./res
+          git add ./AndroidManifest.xml
+          git commit -am "✅ assets updated!" 
+          git push
