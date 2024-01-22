@@ -9,7 +9,7 @@ lastMessage = requests.get('https://canary.discord.com/api/v9/channels/119897025
 if lastMessage.get('author').get('bot'):
     
     # Scrape version and download link:
-    downloadLink = m.embeds[0].description.replace(' ','').split('[base.apk](')[1].split(')')[0]
+    downloadLink = lastMessage.get('embeds')[0].get('description').replace(' ','').split('[base.apk](')[1].split(')')[0]
     version = downloadLink.split('?v=')[1]
 
     # Download apk:
