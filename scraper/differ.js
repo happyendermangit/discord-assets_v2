@@ -21,15 +21,6 @@
         return s[0].toUpperCase() + s.slice(1);
     }
 
-    const createComment = (sha,body) => {
-        fetch(`https://api.github.com/repos/${OWNER}/${REPO}/commits/${sha}/comments`,{
-            method:"POST",
-            headers:githubHeaders,
-            body:JSON.stringify({
-                body: body
-            })
-        }).then(e=>e.json()).then(e=>console.log(e))
-    }
 
    
 
@@ -72,7 +63,13 @@
 
     result += "```"
     if (latestCommit.commit.message === "✅ assets updated!") {
-        createComment(latestCommit.sha,result)
+        await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/commits/${latestCommit.sha}/comments`,{
+            method:"POST",
+            headers:githubHeaders,
+            body:JSON.stringify({
+                body: result
+            })
+        })
     }
     
 
