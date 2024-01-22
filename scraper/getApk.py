@@ -1,8 +1,8 @@
-import requests,zipfile
+import requests,zipfile,os
 
 # Scrape last message on apk's channel using a bot token
 lastMessage = requests.get('https://canary.discord.com/api/v9/channels/1198970255075188777/messages',headers={
-    "Authorization":"Bot MTE5ODk2NjU0MDU0NTA1Mjc0Mw.GI7oRc.FPL7mb6I1x3qCIf7GcRVUgTB0am72jgfvj74SA"
+    "Authorization":f"Bot {os.getenv('DISCORD_TOKEN')}"
 }).json()[0]
 
 # check if it's posted by bot
