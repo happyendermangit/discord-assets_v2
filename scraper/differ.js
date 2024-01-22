@@ -3,6 +3,7 @@
 
 
     const githubHeaders = {
+        "Authorization":`Bearer ${process.env.ACCESS_TOKEN}`,
         "Accept":"application/vnd.github+json",
         "X-GitHub-Api-Version": "2022-11-28"
     }
@@ -26,13 +27,13 @@
     const commitsRequest = await fetch(`https://api.github.com/repos/${OWNER}/${REPO}/commits`,{
         headers:githubHeaders
     })
+    
 
     var commits = await commitsRequest.json()
 
     const latestCommitRequest = await fetch(commits[0].url,{
         headers:{
-            "Authorization":"Bearer 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",
-            "Accept":"application/vnd.github+json",
+            "Authorization":`Bearer ${process.env.ACCESS_TOKEN}`,
             "X-GitHub-Api-Version": "2022-11-28"
         }
     })
@@ -40,6 +41,7 @@
     var latestCommit = await latestCommitRequest.json()
 
     var files = latestCommit.files 
+    console.log(files)
 
     for (file of files){
     
