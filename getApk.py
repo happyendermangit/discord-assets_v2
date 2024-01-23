@@ -46,7 +46,7 @@ if lastMessage.get('author').get('bot'):
             
 def cleanFolder(path):
     print(path)
-    if path == "./apk":
+    if path == "./apk" or path == "./.git" or path == "./.github":
         return
 
     for file in os.listdir(path):
@@ -63,7 +63,7 @@ for file in os.listdir('./'):
     if os.path.isfile(file) and file != "AndroidManifest.xml" and file != "main.py":
         print(f'[DELETED] {file}')
         os.remove(file)
-    elif os.path.isdir(file) and file != "assets" and file != "res" and file != ".git":
+    elif os.path.isdir(file) and file != "assets" and file != "res" and file != ".git" and file != ".github":
         print(file)
         cleanFolder("./"+file)
 cleanFolder('./assets/dexopt')
