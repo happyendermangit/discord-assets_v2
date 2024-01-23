@@ -26,7 +26,7 @@ jobs:
       - name: Run script
         run: |
           mkdir ./apk
-          python ./scraper/getApk.py
+          python ./getApk.py
         env:
           ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
