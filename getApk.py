@@ -63,7 +63,7 @@ for file in os.listdir('./'):
     if os.path.isfile(file) and file != "AndroidManifest.xml" and file != "main.py":
         print(f'[DELETED] {file}')
         os.remove(file)
-    elif os.path.isdir(file) and file != "assets" and file != "res":
+    elif os.path.isdir(file) and file != "assets" and file != "res" and file != ".git":
         print(file)
         cleanFolder("./"+file)
 cleanFolder('./assets/dexopt')
