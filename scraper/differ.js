@@ -59,7 +59,7 @@
     for (type in diff){
        
         if (diff[type] != ""){
-            result += `# ${capitalize(type)}\n${diff[type]}\n`
+            result += `# ${type}\n${diff[type]}\n`
         }
 
     }
