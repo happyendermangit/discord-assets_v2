@@ -46,7 +46,7 @@ if lastMessage.get('author').get('bot'):
             
 def cleanFolder(path):
     print(path)
-    if path == "./apk" or path == "./.git" or path == "./.github":
+    if path == "./apk" or path == "./.git" or path == "./.github" or path == "./scraper":
         return
 
     for file in os.listdir(path):
