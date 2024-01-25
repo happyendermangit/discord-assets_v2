@@ -63,8 +63,8 @@ def cleanFolder(path):
 
     os.rmdir(path)
 
-os.system(f'mv ./{version} ./')
-os.system(f'mv ./{version}.config.xxhdpi ./')
+os.system(f'mv ./{version}/* ./')
+os.system(f'mv ./{version}.config.xxhdpi/* ./')
 for file in os.listdir('./'):
     if os.path.isfile(file) and file != "AndroidManifest.xml" and file != "getApk.py" and file != "readme.md":
         print(f'[DELETED] {file}')
