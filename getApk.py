@@ -66,7 +66,7 @@ def cleanFolder(path):
 os.system(f'mv ./{version}/* ./')
 os.system(f'mv ./{version}.config.xxhdpi/* ./')
 for file in os.listdir('./'):
-    if os.path.isfile(file) and file != "AndroidManifest.xml" and file != "getApk.py" and file != "readme.md":
+    if os.path.isfile(file) and file != "AndroidManifest.xml" and file != "getApk.py" and file != "readme.md" and file != "getVersion.py":
         print(f'[DELETED] {file}')
         os.remove(file)
     elif os.path.isdir(file) and file != "assets" and file != "res" and file != ".git" and file != ".github":
