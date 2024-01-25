@@ -2,7 +2,7 @@ name: Assets differ
 on:
   push:
     branches:
-      - main
+      - none
   workflow_dispatch:
 
 
