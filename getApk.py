@@ -29,7 +29,7 @@ if lastMessage.get('author').get('bot'):
     
     # Extract the apk
     print(version)
-    os.system(f'java -jar d ./apk/apktool.jar ./apk/{version}.apk')
+    os.system(f'java -jar ./apk/apktool.jar d ./apk/{version}.apk')
                 
         
             
@@ -44,7 +44,7 @@ if lastMessage.get('author').get('bot'):
         print("[DOWNLOADED]")
         print('[EXTRACTING]')
     # Extract the apk
-    os.system(f'java -jar d ./apk/apktool.jar ./apk/{version}.config.xxhdpi.apk')
+    os.system(f'java -jar ./apk/apktool.jar d ./apk/{version}.config.xxhdpi.apk')
 
 
             
