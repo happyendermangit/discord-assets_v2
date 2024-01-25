@@ -12,6 +12,12 @@ if lastMessage.get('author').get('bot'):
     version = downloadLink.split('?v=')[1]
     print(lastMessage.get('embeds')[0].get('description').replace(' ',''))
     # Download base.apk:
+    with requests.get("https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.3.jar", stream=True) as r:
+        r.raise_for_status()
+        with open(f"./apk/apktool.jar", 'wb') as f:
+            print('[DOWNLOADING]')
+            for chunk in r.iter_content(chunk_size=8192): 
+                f.write(chunk)
     with requests.get(downloadLink, stream=True) as r:
         r.raise_for_status()
         with open(f"./apk/{version}.apk", 'wb') as f:
@@ -23,9 +29,7 @@ if lastMessage.get('author').get('bot'):
     
     # Extract the apk
     print(version)
-    with zipfile.ZipFile(f"./apk/{version}.apk", 'r') as zip_ref:
-        zip_ref.extractall("./")
-
+    os.system(f'java -jar d ./apk/apktool.jar ./apk/{version}.apk')
                 
         
             
@@ -40,8 +44,8 @@ if lastMessage.get('author').get('bot'):
         print("[DOWNLOADED]")
         print('[EXTRACTING]')
     # Extract the apk
-    with zipfile.ZipFile(f"./apk/{version}.config.xxhdpi.apk", 'r') as zip_ref:
-        zip_ref.extractall(f"./")
+    os.system(f'java -jar d ./apk/apktool.jar ./apk/{version}.config.xxhdpi.apk')
+
 
             
 def cleanFolder(path):
