@@ -36,8 +36,9 @@ jobs:
           git config --local user.name "github-actions[bot]"
       - name: Push to git
         run: |
+          Currentversion=$(python ./getVersion.py)
           git add ./assets
           git add ./res
           git add ./AndroidManifest.xml
-          git commit -am "✅ assets updated!" 
+          git commit -am "✅ assets updated ($Currentversion)!" 
           git push
