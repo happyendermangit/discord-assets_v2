@@ -72,4 +72,4 @@ for file in os.listdir('./'):
     elif os.path.isdir(file) and file != "assets" and file != "res" and file != ".git" and file != ".github":
         print(file)
         cleanFolder("./"+file)
-cleanFolder('./assets/dexopt')
+#cleanFolder('./assets/dexopt')
