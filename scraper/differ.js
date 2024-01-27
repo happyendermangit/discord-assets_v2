@@ -43,7 +43,7 @@
 
     for (file of files){
     
-        if (file.status != "renamed" && file.endsWith('.xml') === false && file.startsWith('res') || file.startsWith('assets')){
+        if (file.status != "renamed" && file.endsWith('.xml') === false  && file.endsWith('.jsona') === false  && file.startsWith('res') || file.startsWith('assets')){
             var category; if (file.status === "modified") category = "Updated Files"; if (file.status === "added") category = "Added Files"; if (file.status === "removed") category = "Removed Files"
             diff[category] += `${file.status === "removed" ? "-" : "+"} ${file.filename}\n`    
         }
