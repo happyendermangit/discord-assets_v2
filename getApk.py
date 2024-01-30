@@ -83,7 +83,7 @@ for asset in collectiblesAssets:
     type = asset.get('type')
     with requests.get(f"https://cdn.discordapp.com/app-assets/1096190356233670716/{id}.png?size=4096", stream=True) as r:
         r.raise_for_status()
-        with open(f"./assets/collectible_assets/{name}_(type:{type}).png", 'wb') as f:
+        with open(f"./assets/collectible_assets/{name}_(type:{type}).png", 'a+') as f:
             print('[DOWNLOADING]')
             for chunk in r.iter_content(chunk_size=8192): 
                 f.write(chunk)
