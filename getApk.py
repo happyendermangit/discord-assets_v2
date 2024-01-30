@@ -77,7 +77,7 @@ for file in os.listdir('./'):
         print(file)
         cleanFolder("./"+file)
 cleanFolder('./assets/dexopt')
-os.system('mkdiir ./assets/collectible_assets')
+os.system('mkdir ./assets/collectible_assets')
 for asset in collectiblesAssets:
     name = asset.get('name') # avoid crashing by using .get
     id = asset.get('id')
