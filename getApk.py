@@ -5,6 +5,10 @@ lastMessage = requests.get('https://canary.discord.com/api/v9/channels/119897025
     "Authorization":f"Bot {os.getenv('DISCORD_TOKEN')}"
 }).json()[0]
 
+# crazy 🤯
+collectiblesAssets = requests.get('https://discord.com/api/v10/oauth2/applications/1096190356233670716/assets').json()
+
+
 if lastMessage.get('author').get('bot'):
     
     # Scrape version and download link:
@@ -72,4 +76,14 @@ for file in os.listdir('./'):
     elif os.path.isdir(file) and file != "assets" and file != "res" and file != ".git" and file != ".github":
         print(file)
         cleanFolder("./"+file)
-#cleanFolder('./assets/dexopt')
+cleanFolder('./assets/dexopt')
+for asset in collectiblesAssets:
+    name = asset.get('name') # avoid crashing by using .get
+    id = asset.get('id')
+    type = asset.get('type')
+    with requests.get(f"https://cdn.discordapp.com/app-assets/1096190356233670716/{id}.png?size=4096", stream=True) as r:
+        r.raise_for_status()
+        with open(f"./assets/collectible_assets/{name}_(type:{type}).png", 'wb') as f:
+            print('[DOWNLOADING]')
+            for chunk in r.iter_content(chunk_size=8192): 
+                f.write(chunk)
