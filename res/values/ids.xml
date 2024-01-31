@@ -181,6 +181,7 @@
     <item type="id" name="dialog_button" />
     <item type="id" name="dialog_card" />
     <item type="id" name="disconnect_btn" />
+    <item type="id" name="drawee_view" />
     <item type="id" name="edit_query" />
     <item type="id" name="edit_text_id" />
     <item type="id" name="emoji" />
@@ -631,13 +632,13 @@
     <item type="id" name="splash" />
     <item type="id" name="split_action_bar" />
     <item type="id" name="spoiler" />
-    <item type="id" name="src_toggle" />
     <item type="id" name="start_image" />
     <item type="id" name="start_spacer" />
     <item type="id" name="state_aspect_ratio" />
     <item type="id" name="state_rotate" />
     <item type="id" name="state_scale" />
     <item type="id" name="status_bar_latest_event_content" />
+    <item type="id" name="status_text" />
     <item type="id" name="sticker_view" />
     <item type="id" name="submenuarrow" />
     <item type="id" name="submit_area" />
@@ -653,6 +654,7 @@
     <item type="id" name="subtitle_right" />
     <item type="id" name="subtitle_text" />
     <item type="id" name="subtitle_top_barrier" />
+    <item type="id" name="subtitles_wrapper" />
     <item type="id" name="suppress_notifications_icon" />
     <item type="id" name="survey_background" />
     <item type="id" name="survey_card" />
