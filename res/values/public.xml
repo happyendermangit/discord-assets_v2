@@ -4231,74 +4231,74 @@
     <public type="drawable" name="material_ic_keyboard_arrow_right_black_24dp" id="0x7f0805fd" />
     <public type="drawable" name="material_ic_menu_arrow_down_black_24dp" id="0x7f0805fe" />
     <public type="drawable" name="material_ic_menu_arrow_up_black_24dp" id="0x7f0805ff" />
-    <public type="drawable" name="mtrl_bottomsheet_drag_handle" id="0x7f08079c" />
-    <public type="drawable" name="mtrl_checkbox_button" id="0x7f08079d" />
-    <public type="drawable" name="mtrl_checkbox_button_checked_unchecked" id="0x7f08079e" />
-    <public type="drawable" name="mtrl_checkbox_button_icon" id="0x7f08079f" />
-    <public type="drawable" name="mtrl_checkbox_button_icon_checked_indeterminate" id="0x7f0807a0" />
-    <public type="drawable" name="mtrl_checkbox_button_icon_checked_unchecked" id="0x7f0807a1" />
-    <public type="drawable" name="mtrl_checkbox_button_icon_indeterminate_checked" id="0x7f0807a2" />
-    <public type="drawable" name="mtrl_checkbox_button_icon_indeterminate_unchecked" id="0x7f0807a3" />
-    <public type="drawable" name="mtrl_checkbox_button_icon_unchecked_checked" id="0x7f0807a4" />
-    <public type="drawable" name="mtrl_checkbox_button_icon_unchecked_indeterminate" id="0x7f0807a5" />
-    <public type="drawable" name="mtrl_checkbox_button_unchecked_checked" id="0x7f0807a6" />
-    <public type="drawable" name="mtrl_dialog_background" id="0x7f0807a7" />
-    <public type="drawable" name="mtrl_dropdown_arrow" id="0x7f0807a8" />
-    <public type="drawable" name="mtrl_ic_arrow_drop_down" id="0x7f0807a9" />
-    <public type="drawable" name="mtrl_ic_arrow_drop_up" id="0x7f0807aa" />
-    <public type="drawable" name="mtrl_ic_cancel" id="0x7f0807ab" />
-    <public type="drawable" name="mtrl_ic_check_mark" id="0x7f0807ac" />
-    <public type="drawable" name="mtrl_ic_checkbox_checked" id="0x7f0807ad" />
-    <public type="drawable" name="mtrl_ic_checkbox_unchecked" id="0x7f0807ae" />
-    <public type="drawable" name="mtrl_ic_error" id="0x7f0807af" />
-    <public type="drawable" name="mtrl_ic_indeterminate" id="0x7f0807b0" />
-    <public type="drawable" name="mtrl_navigation_bar_item_background" id="0x7f0807b1" />
-    <public type="drawable" name="mtrl_popupmenu_background" id="0x7f0807b2" />
-    <public type="drawable" name="mtrl_popupmenu_background_overlay" id="0x7f0807b3" />
-    <public type="drawable" name="mtrl_switch_thumb" id="0x7f0807b4" />
-    <public type="drawable" name="mtrl_switch_thumb_checked" id="0x7f0807b5" />
-    <public type="drawable" name="mtrl_switch_thumb_checked_pressed" id="0x7f0807b6" />
-    <public type="drawable" name="mtrl_switch_thumb_checked_unchecked" id="0x7f0807b7" />
-    <public type="drawable" name="mtrl_switch_thumb_pressed" id="0x7f0807b8" />
-    <public type="drawable" name="mtrl_switch_thumb_pressed_checked" id="0x7f0807b9" />
-    <public type="drawable" name="mtrl_switch_thumb_pressed_unchecked" id="0x7f0807ba" />
-    <public type="drawable" name="mtrl_switch_thumb_unchecked" id="0x7f0807bb" />
-    <public type="drawable" name="mtrl_switch_thumb_unchecked_checked" id="0x7f0807bc" />
-    <public type="drawable" name="mtrl_switch_thumb_unchecked_pressed" id="0x7f0807bd" />
-    <public type="drawable" name="mtrl_switch_track" id="0x7f0807be" />
-    <public type="drawable" name="mtrl_switch_track_decoration" id="0x7f0807bf" />
-    <public type="drawable" name="mtrl_tabs_default_indicator" id="0x7f0807c0" />
-    <public type="drawable" name="navigation_empty_icon" id="0x7f0807c1" />
-    <public type="drawable" name="notification_action_background" id="0x7f0807c2" />
-    <public type="drawable" name="notification_bg" id="0x7f0807c3" />
-    <public type="drawable" name="notification_bg_low" id="0x7f0807c4" />
-    <public type="drawable" name="notification_icon_background" id="0x7f0807c9" />
-    <public type="drawable" name="notification_template_icon_bg" id="0x7f0807cb" />
-    <public type="drawable" name="notification_template_icon_low_bg" id="0x7f0807cc" />
-    <public type="drawable" name="notification_tile_bg" id="0x7f0807cd" />
-    <public type="drawable" name="overlay" id="0x7f0807cf" />
-    <public type="drawable" name="redbox_top_border_background" id="0x7f0807d0" />
-    <public type="drawable" name="test_level_drawable" id="0x7f0807d1" />
-    <public type="drawable" name="tooltip_frame_dark" id="0x7f0807d2" />
-    <public type="drawable" name="tooltip_frame_light" id="0x7f0807d3" />
-    <public type="drawable" name="trash_bg" id="0x7f0807d4" />
-    <public type="drawable" name="ucrop_crop" id="0x7f0807d5" />
-    <public type="drawable" name="ucrop_ic_crop" id="0x7f0807d7" />
-    <public type="drawable" name="ucrop_ic_crop_unselected" id="0x7f0807d8" />
-    <public type="drawable" name="ucrop_ic_cross" id="0x7f0807d9" />
-    <public type="drawable" name="ucrop_ic_next" id="0x7f0807db" />
-    <public type="drawable" name="ucrop_ic_reset" id="0x7f0807dc" />
-    <public type="drawable" name="ucrop_ic_rotate" id="0x7f0807dd" />
-    <public type="drawable" name="ucrop_ic_rotate_unselected" id="0x7f0807de" />
-    <public type="drawable" name="ucrop_ic_scale" id="0x7f0807df" />
-    <public type="drawable" name="ucrop_ic_scale_unselected" id="0x7f0807e0" />
-    <public type="drawable" name="ucrop_rotate" id="0x7f0807e1" />
-    <public type="drawable" name="ucrop_scale" id="0x7f0807e2" />
-    <public type="drawable" name="ucrop_shadow_upside" id="0x7f0807e3" />
-    <public type="drawable" name="ucrop_vector_ic_crop" id="0x7f0807e4" />
-    <public type="drawable" name="ucrop_vector_loader" id="0x7f0807e5" />
-    <public type="drawable" name="ucrop_vector_loader_animated" id="0x7f0807e6" />
-    <public type="drawable" name="ucrop_wrapper_controls_shape" id="0x7f0807e7" />
+    <public type="drawable" name="mtrl_bottomsheet_drag_handle" id="0x7f08079f" />
+    <public type="drawable" name="mtrl_checkbox_button" id="0x7f0807a0" />
+    <public type="drawable" name="mtrl_checkbox_button_checked_unchecked" id="0x7f0807a1" />
+    <public type="drawable" name="mtrl_checkbox_button_icon" id="0x7f0807a2" />
+    <public type="drawable" name="mtrl_checkbox_button_icon_checked_indeterminate" id="0x7f0807a3" />
+    <public type="drawable" name="mtrl_checkbox_button_icon_checked_unchecked" id="0x7f0807a4" />
+    <public type="drawable" name="mtrl_checkbox_button_icon_indeterminate_checked" id="0x7f0807a5" />
+    <public type="drawable" name="mtrl_checkbox_button_icon_indeterminate_unchecked" id="0x7f0807a6" />
+    <public type="drawable" name="mtrl_checkbox_button_icon_unchecked_checked" id="0x7f0807a7" />
+    <public type="drawable" name="mtrl_checkbox_button_icon_unchecked_indeterminate" id="0x7f0807a8" />
+    <public type="drawable" name="mtrl_checkbox_button_unchecked_checked" id="0x7f0807a9" />
+    <public type="drawable" name="mtrl_dialog_background" id="0x7f0807aa" />
+    <public type="drawable" name="mtrl_dropdown_arrow" id="0x7f0807ab" />
+    <public type="drawable" name="mtrl_ic_arrow_drop_down" id="0x7f0807ac" />
+    <public type="drawable" name="mtrl_ic_arrow_drop_up" id="0x7f0807ad" />
+    <public type="drawable" name="mtrl_ic_cancel" id="0x7f0807ae" />
+    <public type="drawable" name="mtrl_ic_check_mark" id="0x7f0807af" />
+    <public type="drawable" name="mtrl_ic_checkbox_checked" id="0x7f0807b0" />
+    <public type="drawable" name="mtrl_ic_checkbox_unchecked" id="0x7f0807b1" />
+    <public type="drawable" name="mtrl_ic_error" id="0x7f0807b2" />
+    <public type="drawable" name="mtrl_ic_indeterminate" id="0x7f0807b3" />
+    <public type="drawable" name="mtrl_navigation_bar_item_background" id="0x7f0807b4" />
+    <public type="drawable" name="mtrl_popupmenu_background" id="0x7f0807b5" />
+    <public type="drawable" name="mtrl_popupmenu_background_overlay" id="0x7f0807b6" />
+    <public type="drawable" name="mtrl_switch_thumb" id="0x7f0807b7" />
+    <public type="drawable" name="mtrl_switch_thumb_checked" id="0x7f0807b8" />
+    <public type="drawable" name="mtrl_switch_thumb_checked_pressed" id="0x7f0807b9" />
+    <public type="drawable" name="mtrl_switch_thumb_checked_unchecked" id="0x7f0807ba" />
+    <public type="drawable" name="mtrl_switch_thumb_pressed" id="0x7f0807bb" />
+    <public type="drawable" name="mtrl_switch_thumb_pressed_checked" id="0x7f0807bc" />
+    <public type="drawable" name="mtrl_switch_thumb_pressed_unchecked" id="0x7f0807bd" />
+    <public type="drawable" name="mtrl_switch_thumb_unchecked" id="0x7f0807be" />
+    <public type="drawable" name="mtrl_switch_thumb_unchecked_checked" id="0x7f0807bf" />
+    <public type="drawable" name="mtrl_switch_thumb_unchecked_pressed" id="0x7f0807c0" />
+    <public type="drawable" name="mtrl_switch_track" id="0x7f0807c1" />
+    <public type="drawable" name="mtrl_switch_track_decoration" id="0x7f0807c2" />
+    <public type="drawable" name="mtrl_tabs_default_indicator" id="0x7f0807c3" />
+    <public type="drawable" name="navigation_empty_icon" id="0x7f0807c4" />
+    <public type="drawable" name="notification_action_background" id="0x7f0807c5" />
+    <public type="drawable" name="notification_bg" id="0x7f0807c6" />
+    <public type="drawable" name="notification_bg_low" id="0x7f0807c7" />
+    <public type="drawable" name="notification_icon_background" id="0x7f0807cc" />
+    <public type="drawable" name="notification_template_icon_bg" id="0x7f0807ce" />
+    <public type="drawable" name="notification_template_icon_low_bg" id="0x7f0807cf" />
+    <public type="drawable" name="notification_tile_bg" id="0x7f0807d0" />
+    <public type="drawable" name="overlay" id="0x7f0807d2" />
+    <public type="drawable" name="redbox_top_border_background" id="0x7f0807d3" />
+    <public type="drawable" name="test_level_drawable" id="0x7f0807d4" />
+    <public type="drawable" name="tooltip_frame_dark" id="0x7f0807d5" />
+    <public type="drawable" name="tooltip_frame_light" id="0x7f0807d6" />
+    <public type="drawable" name="trash_bg" id="0x7f0807d7" />
+    <public type="drawable" name="ucrop_crop" id="0x7f0807d8" />
+    <public type="drawable" name="ucrop_ic_crop" id="0x7f0807da" />
+    <public type="drawable" name="ucrop_ic_crop_unselected" id="0x7f0807db" />
+    <public type="drawable" name="ucrop_ic_cross" id="0x7f0807dc" />
+    <public type="drawable" name="ucrop_ic_next" id="0x7f0807de" />
+    <public type="drawable" name="ucrop_ic_reset" id="0x7f0807df" />
+    <public type="drawable" name="ucrop_ic_rotate" id="0x7f0807e0" />
+    <public type="drawable" name="ucrop_ic_rotate_unselected" id="0x7f0807e1" />
+    <public type="drawable" name="ucrop_ic_scale" id="0x7f0807e2" />
+    <public type="drawable" name="ucrop_ic_scale_unselected" id="0x7f0807e3" />
+    <public type="drawable" name="ucrop_rotate" id="0x7f0807e4" />
+    <public type="drawable" name="ucrop_scale" id="0x7f0807e5" />
+    <public type="drawable" name="ucrop_shadow_upside" id="0x7f0807e6" />
+    <public type="drawable" name="ucrop_vector_ic_crop" id="0x7f0807e7" />
+    <public type="drawable" name="ucrop_vector_loader" id="0x7f0807e8" />
+    <public type="drawable" name="ucrop_vector_loader_animated" id="0x7f0807e9" />
+    <public type="drawable" name="ucrop_wrapper_controls_shape" id="0x7f0807ea" />
     <public type="drawable" name="adaptive_icon" id="0x7f08009b" />
     <public type="drawable" name="autofill_inline_suggestion_chip_background" id="0x7f08009e" />
     <public type="drawable" name="_discord_common_js_shared_images_flags_bg" id="0x7f08002a" />
@@ -4497,13 +4497,16 @@
     <public type="drawable" name="modules_safety_hub_images_strikedetailheader" id="0x7f080744" />
     <public type="drawable" name="modules_safety_hub_images_video_dark" id="0x7f080745" />
     <public type="drawable" name="modules_safety_hub_images_video_light" id="0x7f080746" />
-    <public type="drawable" name="modules_self_mod_stranger_danger_images_safety_banner" id="0x7f08074c" />
-    <public type="drawable" name="modules_voice_panel_native_images_background" id="0x7f08078d" />
-    <public type="drawable" name="notification_oversize_large_icon_bg" id="0x7f0807ca" />
+    <public type="drawable" name="modules_self_mod_inappropriate_conversation_images_tips" id="0x7f080749" />
+    <public type="drawable" name="modules_self_mod_inappropriate_conversation_images_wumpus_exclamation" id="0x7f08074a" />
+    <public type="drawable" name="modules_self_mod_inappropriate_conversation_images_wumpus_lightbulb" id="0x7f08074b" />
+    <public type="drawable" name="modules_self_mod_shared_images_safety_banner" id="0x7f08074c" />
+    <public type="drawable" name="modules_voice_panel_native_images_background" id="0x7f080790" />
+    <public type="drawable" name="notification_oversize_large_icon_bg" id="0x7f0807cd" />
     <public type="drawable" name="images_googleauthlogo" id="0x7f080264" />
     <public type="drawable" name="images_native_empties_search_empty_state_dark" id="0x7f0802f6" />
     <public type="drawable" name="modules_directory_channels_native_images_hub_header" id="0x7f08062f" />
-    <public type="drawable" name="modules_user_profile_images_banner_sample_banner" id="0x7f08076c" />
+    <public type="drawable" name="modules_user_profile_images_banner_sample_banner" id="0x7f08076f" />
     <public type="drawable" name="ic_send_white_24dp" id="0x7f080247" />
     <public type="drawable" name="modules_age_gate_native_images_nsfw_gate" id="0x7f080603" />
     <public type="drawable" name="modules_hub_native_images_hubbacktoschool" id="0x7f0806c0" />
