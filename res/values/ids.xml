@@ -632,13 +632,13 @@
     <item type="id" name="splash" />
     <item type="id" name="split_action_bar" />
     <item type="id" name="spoiler" />
+    <item type="id" name="src_toggle" />
     <item type="id" name="start_image" />
     <item type="id" name="start_spacer" />
     <item type="id" name="state_aspect_ratio" />
     <item type="id" name="state_rotate" />
     <item type="id" name="state_scale" />
     <item type="id" name="status_bar_latest_event_content" />
-    <item type="id" name="status_text" />
     <item type="id" name="sticker_view" />
     <item type="id" name="submenuarrow" />
     <item type="id" name="submit_area" />
