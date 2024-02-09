@@ -1147,6 +1147,10 @@
     <color name="voice_video_tile_blur_fallback_darker">#801c1d23</color>
     <color name="voice_video_tile_blur_fallback_light">#7a1e1f22</color>
     <color name="voice_video_tile_blur_fallback_midnight">#801c1d23</color>
+    <color name="voice_video_video_tile_background_dark">#662c2d35</color>
+    <color name="voice_video_video_tile_background_darker">#662c2d35</color>
+    <color name="voice_video_video_tile_background_light">#662c2d35</color>
+    <color name="voice_video_video_tile_background_midnight">#662c2d35</color>
     <color name="voice_video_video_tile_blur_fallback_dark">#7a1e1f22</color>
     <color name="voice_video_video_tile_blur_fallback_darker">#7a1e1f22</color>
     <color name="voice_video_video_tile_blur_fallback_light">#7a1e1f22</color>
