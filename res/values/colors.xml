@@ -466,6 +466,10 @@
     <color name="guild_boosting_pink">#ffff73fa</color>
     <color name="guild_boosting_purple">#ffb377f3</color>
     <color name="guild_boosting_purple_for_gradients">#ff9b44f7</color>
+    <color name="halo_positive_dark">#3d23a55a</color>
+    <color name="halo_positive_darker">#3d23a55a</color>
+    <color name="halo_positive_light">#3d23a55a</color>
+    <color name="halo_positive_midnight">#3d23a55a</color>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
     <color name="holowaves_background">#ff040404</color>
