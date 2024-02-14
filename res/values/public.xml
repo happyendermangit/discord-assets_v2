@@ -6079,6 +6079,7 @@
     <public type="raw" name="user_join" id="0x7f12007e" />
     <public type="raw" name="user_leave" id="0x7f12007f" />
     <public type="raw" name="user_moved" id="0x7f120080" />
+    <public type="raw" name="vibing_wumpus" id="0x7f120081" />
     <public type="string" name="abc_action_bar_home_description" id="0x7f130000" />
     <public type="string" name="abc_action_bar_up_description" id="0x7f130001" />
     <public type="string" name="abc_action_menu_overflow_description" id="0x7f130002" />
