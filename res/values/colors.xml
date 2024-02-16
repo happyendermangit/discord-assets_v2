@@ -78,7 +78,7 @@
     <color name="beanie_background">#ffc1c5f4</color>
     <color name="bg_backdrop_dark">#b3000000</color>
     <color name="bg_backdrop_darker">#b3000000</color>
-    <color name="bg_backdrop_light">#b3000000</color>
+    <color name="bg_backdrop_light">#8a000000</color>
     <color name="bg_backdrop_midnight">#bf212229</color>
     <color name="bg_gradient_aurora_1">#ff062053</color>
     <color name="bg_gradient_aurora_2">#ff191fbb</color>
@@ -329,6 +329,10 @@
     <color name="common_google_signin_btn_text_light_disabled">#1f000000</color>
     <color name="common_google_signin_btn_text_light_focused">#90000000</color>
     <color name="common_google_signin_btn_text_light_pressed">#de000000</color>
+    <color name="context_menu_backdrop_background_dark">#b3000000</color>
+    <color name="context_menu_backdrop_background_darker">#b3000000</color>
+    <color name="context_menu_backdrop_background_light">#8a000000</color>
+    <color name="context_menu_backdrop_background_midnight">#b3000000</color>
     <color name="controller_background">#ffcdd0ed</color>
     <color name="creator_revenue_info_box_background_dark">#1a207a8d</color>
     <color name="creator_revenue_info_box_background_darker">#1a207a8d</color>
@@ -1147,10 +1151,6 @@
     <color name="user_profile_header_overflow_background_darker">#801c1d23</color>
     <color name="user_profile_header_overflow_background_light">#80ffffff</color>
     <color name="user_profile_header_overflow_background_midnight">#801c1d23</color>
-    <color name="voice_video_tile_blur_fallback_dark">#7a1e1f22</color>
-    <color name="voice_video_tile_blur_fallback_darker">#801c1d23</color>
-    <color name="voice_video_tile_blur_fallback_light">#7a1e1f22</color>
-    <color name="voice_video_tile_blur_fallback_midnight">#801c1d23</color>
     <color name="voice_video_video_tile_background_dark">#662c2d35</color>
     <color name="voice_video_video_tile_background_darker">#662c2d35</color>
     <color name="voice_video_video_tile_background_light">#662c2d35</color>
