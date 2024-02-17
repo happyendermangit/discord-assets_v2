@@ -121,7 +121,6 @@
     <item type="id" name="buttonPanel" />
     <item type="id" name="button_container" />
     <item type="id" name="button_wrapper" />
-    <item type="id" name="buttons_top" />
     <item type="id" name="camera_button" />
     <item type="id" name="cancel_action" />
     <item type="id" name="cancel_button" />
@@ -518,6 +517,7 @@
     <item type="id" name="progress_spinner" />
     <item type="id" name="progress_subtext" />
     <item type="id" name="progress_text" />
+    <item type="id" name="prompt_text" />
     <item type="id" name="provider" />
     <item type="id" name="qr_scanner" />
     <item type="id" name="question_text" />
@@ -674,6 +674,7 @@
     <item type="id" name="tag_unhandled_key_event_manager" />
     <item type="id" name="tag_unhandled_key_listeners" />
     <item type="id" name="tag_window_insets_animation_callback" />
+    <item type="id" name="tertiary_action_button" />
     <item type="id" name="text" />
     <item type="id" name="text2" />
     <item type="id" name="textSpacerNoButtons" />

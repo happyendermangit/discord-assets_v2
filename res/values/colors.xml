@@ -855,6 +855,14 @@
     <color name="polls_image_normal_border_darker">#e6252525</color>
     <color name="polls_image_normal_border_light">#e6252525</color>
     <color name="polls_image_normal_border_midnight">#e6252525</color>
+    <color name="polls_result_fill_dark">#335865f2</color>
+    <color name="polls_result_fill_darker">#335865f2</color>
+    <color name="polls_result_fill_light">#335865f2</color>
+    <color name="polls_result_fill_midnight">#335865f2</color>
+    <color name="polls_victor_fill_dark">#3323a55a</color>
+    <color name="polls_victor_fill_darker">#3323a55a</color>
+    <color name="polls_victor_fill_light">#3324934e</color>
+    <color name="polls_victor_fill_midnight">#3323a55a</color>
     <color name="premium_perk_blue">#ff80a6ff</color>
     <color name="premium_perk_blue_alt">#ff9cb8ff</color>
     <color name="premium_perk_dark_blue">#ff4173da</color>
