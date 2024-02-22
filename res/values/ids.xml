@@ -541,7 +541,6 @@
     <item type="id" name="reply_spline" />
     <item type="id" name="reply_text" />
     <item type="id" name="results_rv" />
-    <item type="id" name="results_start" />
     <item type="id" name="reveal_button" />
     <item type="id" name="right_bar" />
     <item type="id" name="right_icon" />
@@ -716,8 +715,6 @@
     <item type="id" name="toolbar_title" />
     <item type="id" name="topPanel" />
     <item type="id" name="top_guideline" />
-    <item type="id" name="top_right_icon" />
-    <item type="id" name="top_right_icon_container" />
     <item type="id" name="touch_outside" />
     <item type="id" name="transition_current_scene" />
     <item type="id" name="transition_layout_save" />
